@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 243, 233);
+}
+.border{
+    border: 2px solid black;
+}
+
+.display{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+header{
+ height: 7rem;
+ width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  gap: 4rem;
+  background-color: white;
+}
+
+.header-input{
+    height: 2rem;
+    width: 50%;
+    outline: none;
+    padding-left: 2rem;
+
+}
+.categ-button{
+    height: 2rem;
+    width: 30%;
+    border-left: none;
+}
+.search{
+    width: 20%;
+    height: 2rem;
+    background-color: black;
+    color: rgb(253, 252, 250);
+    border-left: none;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+.contact{
+    gap: 0;
+}
+.cart{
+    height: 80%;
+    width: 18%;
+    background-color: orange;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    
+}
+
+.sidebar{
+    height: 100vh;
+    width: 20vw;
+    background-color: white;
+}
+.main{
+    height: 100%;
+    width: 70vw;
+    
+}
+.sidebar-main{
+    gap: 20px;
+    margin-top: 30px;
+}
+.crousal{
+    height: 400px;
+    width: 100%;
+}
+
+.books-poster{
+    height: 230px;
+    width: 100%;
+    gap: 20px;
+}
+
+.books-links{
+    height: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.books-links-text{
+
+    justify-content: start;
+    gap: 40px;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.books-links-text>p:hover{
+    color: orange;
+}
+
+.books-list{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+.books-list-card{
+    height: 300px;
+    width: 200px;
+    background-color: gray;
+}
+
+.books-list-card-img{
+    height: 70%;
+    width: 100%;
+    background-image: url(https://opencart.templatetrip.com/OPC02/OPC040/OPC09/image/cache/catalog/demo/product/02-210x210.jpg);
+   background-repeat: no-repeat;
+   border: 1px solid gray;
+
+   transition: all 1s;
+    
+
+}
+
+.books-list-card-img:hover{
+    background-image: url(https://opencart.templatetrip.com/OPC02/OPC040/OPC09/image/cache/catalog/demo/product/01-570x570.jpg);
+    /* background-repeat: no-repeat;
+   border: 1px solid gray; */
+   height: 70%;
+   width: 100%;
+   background-size: cover;
+}
