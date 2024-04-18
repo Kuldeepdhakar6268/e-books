@@ -125,15 +125,55 @@ header{
    border: 1px solid gray;
 
    transition: all 1s;
-    
+    align-items: end;
 
+   justify-content: start;
+   padding-left: 1rem;padding-bottom: 0.4rem;
 }
-
+.books-list-card-img-icon{
+     padding:3px; border-radius:50%;
+    display: none;
+    padding: 3px;
+    transition: all 1s;
+    background-color: rgb(241, 234, 234);
+    color: rgb(165, 163, 163);
+}
 .books-list-card-img:hover{
     background-image: url(https://opencart.templatetrip.com/OPC02/OPC040/OPC09/image/cache/catalog/demo/product/01-570x570.jpg);
-    /* background-repeat: no-repeat;
+ /* background-repeat: no-repeat;
    border: 1px solid gray; */
    height: 70%;
    width: 100%;
    background-size: cover;
+   gap: 0.4rem;
+
+   
+  &{
+    .books-list-card-img-icon{
+              display:inline;
+             /* width: 300px;  */
+    }
+  }
+
+
 }
+
+.books-list-card-img-icon:hover{
+    background-color: rgb(106, 105, 105);
+    color: white;
+}
+
+.stars{
+    width:1.3rem;
+    color: rgb(233, 218, 190);
+}
+
+.stars:nth-child(n){
+       background:orange;
+      
+}
+
+.stars:last-child{
+    background-color:transparent;
+}
+
