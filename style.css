@@ -106,16 +106,29 @@ header{
 }
 
 .books-list{
-    height: 500px;
+    height: 500%;
     width: 100%;
     background-color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .books-list-card{
     height: 300px;
     width: 200px;
-    background-color: gray;
+    /* background-color: gray; */
+    color:gray;
+    line-height: 1.7rem;
+    
 }
+.books-list-card>h4{
+    color: orange;
+    
+}
+
 
 .books-list-card-img{
     height: 70%;
@@ -164,8 +177,9 @@ header{
 }
 
 .stars{
-    width:1.3rem;
-    color: rgb(233, 218, 190);
+    width:1rem;
+    color: rgb(229, 190, 118);
+   
 }
 
 .stars:nth-child(n){
@@ -177,3 +191,10 @@ header{
     background-color:transparent;
 }
 
+.book_happiness{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
