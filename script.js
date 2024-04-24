@@ -1,6 +1,8 @@
-let a=[3,33,3,32];
+console.log("sdjkfls");
+let data="";
+async function datat(){
+   data= await fetch("http://localhost:3000/findone");
+   console.log(data)
+}
 
-let b=a;
-b.pop();
-
-cons
+console.log(datat())
