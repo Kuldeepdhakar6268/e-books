@@ -248,8 +248,7 @@ width: 100%;
 opacity: 0;
 height: 100%;
     }
-
-    
+  
 }
 
 @keyframes hover_2 {
@@ -293,7 +292,7 @@ opacity: 0;
     &{
         .Latest-new-card-img-icon{
     
-            transform: scale(2);
+            transform: scale(1.3);
             opacity: 100%;
            
         }
@@ -309,6 +308,7 @@ opacity: 0;
     color: white;
     padding: 5px;
     transition: all 1s;
+    transform: scale(2);
     opacity: 0;
     filter: brightness(4);
             
@@ -321,7 +321,66 @@ background-color: black;
     
 }
 
+.manufacturers{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(222, 220, 220);
+    margin-top: 10px;
+    
+    overflow-x: hidden;
+    
+    gap: 40px;
+   
+    
+
+}
+.manufacturers-img{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    animation: scrool 8s ease-in-out 1s alternate-reverse  infinite ;
+}
+
+.img-scrool{
+    width: 400px;
+    height: 130px;
+}
+@keyframes scrool {
+    0%{
+        transform: translateX(0px);
+        
+    }
+    10%{
+        /* transform: translateX(-220px); */
+        
+    }
+    100%{
+        transform: translateX(-900px);
+    }
+
+}
+.manufacturers::-webkit-scrollbar{
+    width: 0;
+}
 
 
+.up-button{
 
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    background-color: orange;
+    color: white;
 
+    
+}
