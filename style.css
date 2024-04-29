@@ -61,9 +61,80 @@ header{
 }
 
 .sidebar{
-    height: 100vh;
+    height: 300vh;
     width: 20vw;
     background-color: white;
+    margin-top: -340px;
+    
+}
+
+.categaris{
+    height: 33%;
+    width: 100%;
+    line-height: 2.4rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid black;
+    
+}
+.categaris-electronics:hover{
+    &{
+        .categaris-electronics-list{
+            display:block;
+        }
+    }
+}
+.categaris-electronics-list{
+    height: 200px;
+    width: 400px;
+    background-color: gray;
+    position: absolute;
+    left: 20%;
+    display: none;
+}
+.categaris>h3{
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+.testmonials{
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 3rem;
+    overflow-x: hidden;
+    animation: scrool2 3s ease-in-out 1s alternate-reverse  infinite ;
+
+}
+.testmonals-1{
+    display: none;
+}
+@keyframes scrool2 {
+    10%{
+        .testmonals-1{
+            display: contents;
+            transform: translateX(0);
+
+        }
+    }
+    100%{
+        .testmonals-1{
+            display: contents;
+            transform: translateX(200px);
+
+        }
+    }
+}
+.testmonals-1{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1frpx 1fr;
+    text-align: center;
+    line-height: 1.4rem;
+}
+.testmonals-1-text{
+    width: 250px;
+    margin-top: 3rem;
+
 }
 .main{
     height: 100%;
@@ -381,6 +452,23 @@ background-color: black;
     left: 95%;
     background-color: orange;
     color: white;
+    
 
     
 }
+.up-button:hover{
+    background-color: black;
+}
+
+
+.display1{
+    transition: all 9s;
+    display: none;
+}
+
+footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+}
+

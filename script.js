@@ -13,8 +13,17 @@
 // data().then(res=>{
 //    console.log(res)
 // })
-document.querySelector(".up-button").addEventListener("click",function(){
-   console.log(window.scrollY)
-})
+
+   window.addEventListener("scroll",function(){
+      if(window.scrollY>113){
+         document.querySelector(".up-button").classList.remove("display1");
+         console.log("content")
+         }
+        else{
+            document.querySelector(".up-button").classList.add("display1");
+            console.log("none")
+            }
+   })
+// })
 
  
